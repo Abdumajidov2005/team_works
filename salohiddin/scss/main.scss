@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    .container {
+        padding: 30px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.hero {
+    .container {
+        padding: 100px 0px;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        color: yellow;
+    }
+}
