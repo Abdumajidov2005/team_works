@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./scss/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    
     <header>
       <nav>
         <div class="container">
@@ -37,7 +44,9 @@
             <li data-aos="fade-down">
               <button class="light_button">⚪ Mode</button>
             </li>
-            <li data-aos="fade-down"><button>Document</button></li>
+            <li data-aos="fade-down">
+              <a href="../index.html"><button>Ortga</button></a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -529,4 +538,8 @@
       </section>
     </main>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
