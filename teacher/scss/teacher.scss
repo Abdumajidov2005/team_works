@@ -105,3 +105,144 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191919;
+}
+
+nav {
+  background-color: black;
+}
+
+.block_top {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.block_top img {
+  width: 200px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.block_bottom {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
+  position: relative;
+}
+
+.add_inputs {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: absolute;
+  top: -26px;
+  left: 190px;
+}
+
+.add_inputs input {
+  background-color: #262626;
+  border: none;
+  outline: none;
+  padding: 20px 16px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+}
+
+.add_inputs button {
+  padding: 20px 20px;
+  border: none;
+  background-color: rgba(1, 170, 186, 0.83);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.block_stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block_stats h2 {
+  font-size: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.block_stats h2 span {
+  padding: 4px 10px;
+  border-radius: 100px;
+  background-color: gray;
+}
+
+.block_stats .stats_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.block_stats .stats_right p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 100px;
+  background-color: gray;
+}
+
+.boxs {
+  padding: 20px 0px;
+}
+
+.boxs .card {
+  width: 100%;
+  background-color: #262626;
+  padding: 20px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card p {
+  width: 90%;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.card span {
+  color: gray;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.card p.done {
+  text-decoration: line-through;
+  color: gray;
+}
