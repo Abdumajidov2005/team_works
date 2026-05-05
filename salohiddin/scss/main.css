@@ -1,1 +1,404 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  transition: all 0.3s ease;
+  position: relative;
+}
+body.active {
+  transition: all 0.3s ease;
+  background-color: black;
+  color: white;
+}
+body.active header {
+  background-color: black;
+  color: white;
+}
+body.active header nav .container {
+  padding: 10px 0px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body.active header nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body.active header nav .container ul li {
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+body.active header nav .container ul li::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+  background-color: #2460FD;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -5px;
+}
+body.active header nav .container ul li:hover::after {
+  width: 100%;
+}
+body.active header nav .container .nav_logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body.active header nav .container .nav_logo h2 {
+  animation: logo 3s linear infinite;
+}
+@keyframes logo {
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 5px;
+    transform: translate(20px) scale(1.3);
+  }
+  100% {
+    letter-spacing: 0px;
+    transform: translate(0px);
+  }
+}
+body.active header nav .container button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+body.active header .hero .container {
+  padding: 100px 0px;
+}
+body.active header .hero .container .hero_card {
+  width: 420px;
+}
+body.active header .hero .container .hero_card h3 {
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+body.active header .hero .container .hero_card h1 {
+  letter-spacing: 1px;
+  padding: 20px 0px;
+}
+body.active header .hero .container .hero_card p {
+  font-weight: 300;
+  padding: 20px 0px;
+}
+body.active header .hero .container .hero_card button {
+  padding: 10px 20px;
+  background-color: #2460FD;
+  border: none;
+  color: white;
+}
+body.active header .hero .container .hero_card2 {
+  background-image: url("../imgs/image copy black.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body.active header .hero .container .hero_card2 img {
+  opacity: 0;
+}
+body.active .intro .container {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body.active .intro .container .intro_card {
+  width: 200px;
+  line-height: 25px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  border: 1px solid white;
+}
+body.active .two {
+  background-color: black;
+}
+body.active .two .container {
+  padding: 50px 0px;
+}
+body.active .two .container .two_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 0px;
+}
+body.active .two .container .two_title .two_title_card {
+  width: 500px;
+}
+body.active .two .container .two_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+  gap: 30px;
+}
+body.active .two .container .two_box .two_card {
+  width: 320px;
+  padding: 40px 20px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+body.active .two .container .two_box .two_card img {
+  padding-bottom: 20px;
+}
+body.active .two .container .two_box .two_card p {
+  padding: 20px 0px;
+}
+body.active .two .container .two_box .two_card button {
+  padding: 10px 20px;
+  background-color: #2460FD;
+  border: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #000D51;
+  color: white;
+}
+header nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+header nav .container {
+  padding: 10px 0px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header nav .container ul li {
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+header nav .container ul li::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+  background-color: white;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -5px;
+}
+header nav .container ul li:hover::after {
+  width: 100%;
+}
+header nav .container .nav_logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header nav .container .nav_logo h2 {
+  animation: logo 3s linear infinite;
+}
+@keyframes logo {
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 5px;
+    transform: translate(20px) scale(1.3);
+  }
+  100% {
+    letter-spacing: 0px;
+    transform: translate(0px);
+  }
+}
+header nav .container button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #2460FD;
+  color: #2460FD;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header nav .container button:hover {
+  transform: scale(1.1);
+}
+header nav .container button:active {
+  transform: scale(0.9);
+}
+header .hero .container {
+  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hero .container .hero_card {
+  width: 420px;
+}
+header .hero .container .hero_card h3 {
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+header .hero .container .hero_card h1 {
+  letter-spacing: 1px;
+  padding: 20px 0px;
+}
+header .hero .container .hero_card p {
+  font-weight: 300;
+  padding: 20px 0px;
+}
+header .hero .container .hero_card button {
+  padding: 10px 20px;
+  background-color: #2460FD;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header .hero .container .hero_card button:hover {
+  transform: scale(1.1);
+}
+header .hero .container .hero_card button:active {
+  transform: scale(0.9);
+}
+
+.intro .container {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.intro .container .intro_card {
+  width: 200px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.two {
+  background-color: #F3F3F3;
+}
+.two .container {
+  padding: 50px 0px;
+}
+.two .container .two_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000D51;
+  padding: 30px 0px;
+}
+.two .container .two_title .two_title_card {
+  width: 500px;
+}
+.two .container .two_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+  gap: 30px;
+}
+.two .container .two_box .two_card {
+  width: 320px;
+  padding: 40px 20px;
+  color: #000D51;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.two .container .two_box .two_card:hover {
+  transform: scale(1.1);
+  background-color: #2460FD;
+  color: white;
+}
+.two .container .two_box .two_card:hover button {
+  background-color: white;
+  color: #2460FD;
+}
+.two .container .two_box .two_card img {
+  padding-bottom: 20px;
+}
+.two .container .two_box .two_card p {
+  padding: 20px 0px;
+}
+.two .container .two_box .two_card button {
+  padding: 10px 20px;
+  background-color: #2460FD;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.two .container .two_box .two_card button:hover {
+  transform: scale(1.1);
+}
+.two .container .two_box .two_card button:active {
+  transform: scale(0.9);
+}
+
+.three .container {
+  padding: 50px 0px;
+}
+.three .container .three_title {
+  background-color: #000D51;
+  color: white;
+  text-align: center;
+  padding: 50px 0px;
+}
+.three .container .three_title h1 {
+  font-weight: 400;
+  line-height: 50px;
+  padding-bottom: 20px;
+}
+.three .container .three_title button {
+  padding: 10px 20px;
+  background-color: #2460FD;
+  border: 2px solid transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.three .container .three_title button:hover {
+  transform: scale(1.1);
+}
+.three .container .three_title button:active {
+  transform: scale(0.9);
+}/*# sourceMappingURL=main.css.map */
