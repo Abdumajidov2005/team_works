@@ -4,9 +4,335 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./sscss/style.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <h1>abdulaziz</h1>
+  <body class="active">
+    <header>
+      <nav>
+        <div class="container">
+          <div class="nav_logo">
+            <h1>CARENT</h1>
+          </div>
+
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Booking</li>
+            <li>Cars</li>
+            <li>Contacts</li>
+          </ul>
+
+          <div class="nav_button">
+            <div class="nav_btn_1">
+              <button>Login | Sign up</button>
+            </div>
+
+            <div class="darkmod">
+              <button>darkmod</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div class="container">
+          <div class="hero_info">
+            <h1>Enjoy your life with our comfortable cars.</h1>
+            <p>Carent, is ready to serve the best experience in car rental.</p>
+            <button>Explore Now</button>
+          </div>
+
+          <div class="hero_icons">
+            <div class="hero_icon_1">
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-telegram"></i>
+              <i class="fa-brands fa-square-facebook"></i>
+            </div>
+
+            <div class="hero_icon_2">
+              <i class="fa-brands fa-square-odnoklassniki"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </div>
+
+            <div class="hero_icon_3">
+              <i class="fa-brands fa-square-whatsapp"></i>
+              <i class="fa-brands fa-square-youtube"></i>
+              <i class="fa-brands fa-square-threads"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="About">
+        <div class="container">
+          <div class="About_title">
+            <h1>About Us</h1>
+          </div>
+
+          <div class="About_box">
+            <div class="About_img">
+              <img src="./imgs/About_img.jpg" alt="" />
+            </div>
+
+            <div class="About_info">
+              <p>
+                We are a specialized team committed to providing reliable car
+                rental services. One of the advantages of renting a car from us
+                is offering competitive and transparent prices. By providing
+                services such as comprehensive insurance ......
+              </p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="book">
+        <div class="container">
+          <div class="book_title">
+            <h1>Book Now</h1>
+          </div>
+
+          <div class="book_box">
+            <div class="book_button_1">
+              <button>
+                <i class="fa-solid fa-location-dot"></i>Pickup Location
+              </button>
+              <button>
+                <i class="fa-regular fa-calendar-days"></i>Pickup Date
+              </button>
+              <button>
+                <i class="fa-regular fa-calendar-days"></i>Return Date
+              </button>
+            </div>
+
+            <div class="book_button_2">
+              <button><i class="fa-solid fa-car"></i>Car Type</button>
+              <button><i class="fa-regular fa-clock"></i>Pickup Time</button>
+              <button><i class="fa-regular fa-clock"></i>Return Time</button>
+              <button>Book Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our">
+        <div class="container">
+          <div class="our_title">
+            <h1>Our Featured Cars</h1>
+          </div>
+
+          <div class="our_box">
+            <div class="our_card">
+              <div class="our_card_img">
+                <img src="./imgs/our_img_1.jpg" alt="" />
+              </div>
+              <h2>Jeep XD</h2>
+              <h3>
+                <span><i class="fa-solid fa-user"></i>5</span>
+                <span><i class="fa-solid fa-gas-pump"></i>Gasoline</span>
+                <span><i class="fa-solid fa-car"></i>SUV</span>
+              </h3>
+              <div class="our_card_info">
+                <div class="our_card_text">
+                  <h4>Daily rate from</h4>
+                  <h5>$200</h5>
+                </div>
+
+                <div class="our_card_button">
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="our_card">
+              <div class="our_card_img">
+                <img src="./imgs/our_img_2.jpg" alt="" />
+              </div>
+              <h2>Ferrari Enzo</h2>
+              <h3>
+                <span><i class="fa-solid fa-user"></i>2</span>
+                <span><i class="fa-solid fa-gas-pump"></i>Electric</span>
+                <span><i class="fa-solid fa-car"></i>Sedan</span>
+              </h3>
+              <div class="our_card_info">
+                <div class="our_card_text">
+                  <h4>Daily rate from</h4>
+                  <h5>$340</h5>
+                </div>
+
+                <div class="our_card_button">
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="our_card">
+              <div class="our_card_img">
+                <img src="./imgs/our_img_3.jpg" alt="" />
+              </div>
+              <h2>Fiat Cope’</h2>
+              <h3>
+                <span><i class="fa-solid fa-user"></i>4</span>
+                <span><i class="fa-solid fa-gas-pump"></i>Gasoline</span>
+                <span><i class="fa-solid fa-car"></i>Mini coupe</span>
+              </h3>
+              <div class="our_card_info">
+                <div class="our_card_text">
+                  <h4>Daily rate from</h4>
+                  <h5>$167</h5>
+                </div>
+
+                <div class="our_card_button">
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="premium">
+        <div class="container">
+          <div class="premium_title">
+            <h1>Our Premium Services</h1>
+          </div>
+
+          <div class="premium_text">
+            <p>
+              Carent is a reputable car rental company that offers a wide range
+              of useful services for every taste.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="crads">
+        <div class="container">
+          <div class="cards_card">
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <h1>24 Hours Support</h1>
+            <p>We support you all hours of the day,</p>
+          </div>
+
+          <div class="cards_card">
+            <i class="fa-solid fa-star"></i>
+            <h1>Qualified Assurance</h1>
+            <p>We support you all hours of the day,</p>
+          </div>
+
+          <div class="cards_card">
+            <i class="fa-solid fa-crosshairs"></i>
+            <h1>GPS on Cars</h1>
+            <p>All cars are equipped with GPS navigation system.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="what">
+        <div class="container">
+          <div class="what_title">
+            <h1>What Our Clients Say?</h1>
+          </div>
+
+          <div class="what_box">
+            <div class="what_card">
+              <div class="what_card_img">
+                <img src="./imgs/what_img_1.png" alt="" />
+              </div>
+              <h2>Kristin Watson</h2>
+              <p>
+                I rented a car for a one-week trip from Carnet on the
+                recommendation of my friend. Actually, I am satisfied with them.
+              </p>
+            </div>
+
+            <div class="what_card">
+              <div class="what_card_img">
+                <img src="./imgs/what_img_2.png" alt="" />
+              </div>
+              <h2>Robert Fox</h2>
+              <p>
+                During my last trip, I used a Carent sport car . The car was
+                completely clean and had enough gas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cars">
+        <div class="container">
+          <div class="cars_text">
+            <h1>450+</h1>
+            <h5>Cars For Rent</h5>
+          </div>
+
+          <div class="cars_text">
+            <h1>800+</h1>
+            <h5>Happy Clients</h5>
+          </div>
+
+          <div class="cars_text">
+            <h1>750+</h1>
+            <h5>Rental Locations</h5>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="contact_title">
+            <h1>Contact Us</h1>
+          </div>
+
+          <div class="contact_box">
+            <div class="contact_input">
+              <input type="text" placeholder="Your Name*" />
+              <input type="text" placeholder="Your Email*" />
+              <textarea name="" id="">Your Message</textarea>
+              <button>Send A Message</button>
+            </div>
+
+            <div class="contact_img">
+              <img src="./imgs/contact_img.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer_text">
+          <h2>
+            Need help renting a car? Please call <span>+1-333-444-5555</span>
+          </h2>
+        </div>
+
+        <div class="footer_icon">
+          <h1>CARENT</h1>
+
+          <div class="icons">
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-whatsapp"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
