@@ -7,7 +7,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1260px;
   margin: 0 auto;
 }
 
@@ -64,6 +64,10 @@ nav .container .nav_links li {
   cursor: pointer;
   letter-spacing: 1px;
   position: relative;
+  transition: all 0.3s ease;
+}
+nav .container .nav_links li:hover {
+  color: #0d4ae6;
 }
 nav .container .nav_links li::after {
   content: "";
@@ -79,18 +83,136 @@ nav .container .nav_links li::after {
 nav .container .nav_links li:hover::after {
   width: 100%;
 }
-nav .container .nav_links li::before {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 2px;
-  top: 0px;
-  left: 0;
-  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-  background-color: #0d4ae6;
+nav .container button {
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #000d51;
   transition: all 0.3s ease;
 }
-nav .container .nav_links li:hover::before {
+nav .container button:hover {
+  background-color: rgba(3, 26, 141, 0.3960784314);
+  transform: translateY(-3px);
+}
+nav .container button:active {
+  transform: translateY(0px);
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .container .hero_left {
+  width: 500px;
+}
+.hero .container .hero_left h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.hero .container .hero_left h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.hero .container .hero_left p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+}
+.hero .container .hero_left button {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 15px 40px;
+  border-radius: 3px;
+  background-color: #0d4ae6;
+  border: none;
+  cursor: pointer;
+}
+.hero .container .hero_right {
+  width: 655px;
+  height: 655px;
+  z-index: 9;
+  position: relative;
+}
+.hero .container .hero_right .orqafon {
+  z-index: -1;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.hero .container .hero_right .orqafon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero .container .hero_right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.consulting .container {
+  padding: 100px 0px;
+  text-align: center;
+}
+.consulting .container h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 13, 81, 0.6);
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+.consulting .container h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000d51;
+  margin-bottom: 40px;
+}
+.consulting .container .consulting_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.consulting .container .consulting_cards .consulting_card {
+  width: 358px;
+  padding: 10px;
+  border: 1px solid rgba(0, 13, 81, 0.6);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.consulting .container .consulting_cards .consulting_card:hover {
+  background-color: rgba(0, 14, 81, 0.0823529412);
+}
+.consulting .container .consulting_cards .consulting_card i {
+  font-size: 35px;
+  color: #000d51;
+  margin-bottom: 15px;
+}
+.consulting .container .consulting_cards .consulting_card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000d51;
+  margin-bottom: 10px;
+}
+.consulting .container .consulting_cards .consulting_card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 13, 81, 0.6);
+  line-height: 22px;
 }/*# sourceMappingURL=teacher.css.map */
